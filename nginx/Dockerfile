@@ -25,6 +25,8 @@ RUN set -eux; \
         libtool \
         libxml2-dev \
         libyajl-dev \
+        libmaxminddb-dev \
+        libmaxminddb0 \
         make \
         patch \
         pkg-config \
@@ -193,6 +195,8 @@ RUN set -eux; \
         liblua5.3 \
         libxml2 \
         libyajl2 \
+        libmaxminddb-dev \
+        libmaxminddb0 \
         moreutils; \
     rm -rf /var/lib/apt/lists/*; \
     apt-get clean; \
